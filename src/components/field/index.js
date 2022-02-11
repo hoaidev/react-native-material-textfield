@@ -627,7 +627,7 @@ export default class TextField extends PureComponent {
       errorColor,
       containerStyle,
       inputContainerStyle: inputContainerStyleOverrides,
-      icon,
+      suffixIcon,
     } = this.props;
 
     let restricted = this.isRestricted();
@@ -693,7 +693,7 @@ export default class TextField extends PureComponent {
               {this.renderAffix("prefix")}
               {this.renderInput()}
               {this.renderAffix("suffix")}
-              {icon}
+              {suffixIcon}
             </View>
           </View>
 
